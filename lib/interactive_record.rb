@@ -60,3 +60,5 @@ class InteractiveRecord
     sql = "SELECT * FROM #{self.table_name} WHERE #{attribute_hash.keys.first} = #{new_value}"
     DB[:conn].execute(sql)
   end
+
+end
